@@ -23,11 +23,11 @@ const Footer = ({ scrollPos }: propTypes) => {
               layout
             >
               <div className="message lg:mr-16">
-                <h2 className="text-48 leading-none lg:leading-tight text-white font-bold">
-                  Feel free to reach out...
+                <h2 className="text-48 leading-none lg:leading-tight text-white font-bold mb-4">
+                  Feel free to reach out!
                 </h2>
                 <p className="text-white lg:text-24 mb-8">
-                  You can give me a shout if you'd like to talk about a project.
+                  Give me a shout if you'd like to chat about anything at all.
                 </p>
               </div>
               <Card />
