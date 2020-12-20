@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-grad {
+  background: linear-gradient(132.71deg, #575d6c 4.01%, #1a142c 97.01%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hero-scrim {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(132.71deg, #575d6c 4.01%, #1a142c 97.01%);
+  transform-origin: 100% 50%;
+  width: 100%;
+  @screen lg {
+    width: 65%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.work-scrim {
+  position: fixed;
+  top: 0;
+  right: left;
+  height: 100%;
+  background: linear-gradient(132.71deg, #575d6c 4.01%, #1a142c 97.01%);
+  transform-origin: 100% 50%;
+  width: 100%;
+  @screen lg {
+    width: 80%;
+  }
+}
+.tech-scrim {
+  position: fixed;
+  top: 0;
+  right: left;
+  height: 100%;
+  background: linear-gradient(132.71deg, #575d6c 4.01%, #1a142c 97.01%);
+  transform-origin: 100% 50%;
+  width: 100%;
+  @screen lg {
+    width: 35%;
+  }
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  min-height: 275px;
+}
+.watermark {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  bottom: 0px;
+  right: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  transform: translateY(30%) rotate(45deg);
+  i {
+    background: theme('colors.gray.light');
+    width: 20px;
+  }
+}
+.big-text {
+  color: #ffffff99;
+  font-style: italic;
+  span {
+  }
+  strong {
+    color: #fff;
+    font-weight: 700;
+    /* font-style: normal; */
+  }
+}
+.made-in {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.light-pattern {
+  background-color: #f6f6f6;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23444480' fill-opacity='0.08' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }

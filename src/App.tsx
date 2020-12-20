@@ -1,25 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useState } from 'react';
+import { AnimateSharedLayout } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import TechStack from './components/TechStack';
+import Hero from './components/Hero';
+import Work from './components/Work';
+import Footer from './components/Footer';
 function App() {
+  const [scrollPos, setScrollPos] = useState('hero');
+  const [heroRef, heroInView] = useInView({
+    threshold: 0.2,
+  });
+  const [techRef, techInView] = useInView({
+    threshold: 0.4,
+  });
+  const [workRef, workInView] = useInView({
+    threshold: 0.2,
+  });
+  const [footerRef, footerInView] = useInView({
+    threshold: 0.5,
+  });
+  useEffect(() => {
+    if (heroInView) {
+      setScrollPos('hero');
+    }
+    if (techInView) {
+      setScrollPos('tech');
+    }
+    if (workInView) {
+      setScrollPos('work');
+    }
+    if (footerInView) {
+      setScrollPos('footer');
+    }
+  }, [workInView, heroInView, techInView, footerInView]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AnimateSharedLayout>
+      <div className="App light-pattern relative">
+        <div className="hero-section" ref={heroRef}>
+          <Hero scrollPos={scrollPos} />
+        </div>
+        <div className="tech-section" ref={techRef}>
+          <TechStack scrollPos={scrollPos} />
+        </div>
+        <div ref={workRef} className="relative work-section">
+          <Work scrollPos={scrollPos} />
+        </div>
+        <div className="footer-section" ref={footerRef}>
+          <Footer scrollPos={scrollPos} />
+        </div>
+      </div>
+    </AnimateSharedLayout>
   );
 }
 
