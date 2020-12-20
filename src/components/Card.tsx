@@ -17,6 +17,8 @@ function card() {
         <a
           href="https://www.linkedin.com/in/marcjfj"
           className="text-gray-mid flex mb-3 group"
+          rel="noreferrer"
+          target="_blank"
         >
           <div className="icon-wrapper mr-2 w-7 h-7 rounded bg-brand-dark flex items-center justify-center">
             <Icon
@@ -32,6 +34,8 @@ function card() {
         </a>
         <a
           href="marc@fariasjones.com"
+          rel="noreferrer"
+          target="_blank"
           className="text-gray-mid flex mb-3 group"
         >
           <div className="icon-wrapper mr-2 w-7 h-7 rounded bg-brand-dark flex items-center justify-center">
@@ -43,6 +47,8 @@ function card() {
         </a>
         <a
           href="https://github.com/marcjfj"
+          rel="noreferrer"
+          target="_blank"
           className="text-gray-mid flex mb-3 group"
         >
           <div className="icon-wrapper mr-2 w-7 h-7 rounded bg-brand-dark flex items-center justify-center">
