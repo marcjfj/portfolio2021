@@ -35,8 +35,8 @@ const Footer = ({ scrollPos }: propTypes) => {
           </motion.div>
         ) : null}
       </motion.div>
-      <div className="container">
-        <motion.p className="made-in text-white font-bold md:text-brand-dark md:pr-16 mt-8">
+      <div className="container relative">
+        <motion.p className="made-in text-white font-bold md:text-brand-dark pr-14 md:pr-6 mt-8">
           Made with ☕️ in Kansas City
         </motion.p>
       </div>
