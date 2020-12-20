@@ -11,7 +11,7 @@ const TechStack = ({ scrollPos }: propTypes) => {
     'CSS3',
     'Sass',
     'PostCSS',
-    'Tailwind',
+    'Tailwind CSS',
     'JavaScript',
     'ES6+',
     'React',
@@ -27,6 +27,7 @@ const TechStack = ({ scrollPos }: propTypes) => {
     'MySQL',
     'Nginx',
     'Git',
+    'npm',
   ];
 
   const listTech = (stack: string[]) => {
