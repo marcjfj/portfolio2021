@@ -2,7 +2,7 @@ import React from 'react';
 import mv from '../motionVariants';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import logoGithub from '@iconify-icons/carbon/logo-github';
 import contentView from '@iconify-icons/carbon/content-view';
 const { heroVariants, fadeVariants } = mv;
@@ -14,7 +14,7 @@ interface CardProps {
   demo: string;
 }
 const CaseStudies = ({ title, desc, image, source, demo }: CardProps) => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.2,
   });
   return (

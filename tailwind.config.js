@@ -1,6 +1,6 @@
 const px = (n) => `${n / 16}rem`;
 module.exports = {
-  purge: [['./src/**/*.js', './public/index.html']],
+  purge: ['./src/**/*.tsx', './src/*.tsx', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {

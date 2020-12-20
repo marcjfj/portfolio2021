@@ -1,4 +1,4 @@
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import logoLinkedIn from '@iconify-icons/carbon/logo-linkedin';
 import mailAll from '@iconify-icons/carbon/send-filled';
 import logoGithub from '@iconify-icons/carbon/logo-github';

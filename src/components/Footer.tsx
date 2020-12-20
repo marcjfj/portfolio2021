@@ -1,5 +1,5 @@
 import Card from './Card';
-import { motion, AnimateSharedLayout } from 'framer-motion';
+import { motion } from 'framer-motion';
 interface propTypes {
   scrollPos: string;
 }

@@ -1,6 +1,6 @@
-import { motion, AnimateSharedLayout } from 'framer-motion';
+import { motion } from 'framer-motion';
 import mv from '../motionVariants';
-const { scrimVariants, heroVariants, fadeVariants } = mv;
+const { heroVariants } = mv;
 
 interface propTypes {
   scrollPos: string;
