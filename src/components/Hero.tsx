@@ -39,8 +39,8 @@ const Hero = ({ scrollPos }: propTypes) => {
             >
               <strong>Hi, Im Marc.</strong> I love building applications and
               creating <strong>great user experiences</strong>. I work as a web
-              developer at<strong> Lifted Logic</strong> in Kansas City and an
-              Adjunct Instructor at
+              developer at<strong> Lifted Logic</strong> in Kansas City and also
+              as an Adjunct Instructor at
               <strong> The University of Wisconsin's</strong> Full Stack Web
               Development program.
             </motion.p>
