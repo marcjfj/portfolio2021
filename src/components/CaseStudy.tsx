@@ -63,7 +63,10 @@ const CaseStudies = ({ title, desc, image, source, demo }: CardProps) => {
             rel="noreferrer"
             className="btn shadow bg-white inline-flex items-center justify-center mr-6 py-3 px-6 rounded-lg w-1/2 text-center bg-gradient-to-bl from-white to-gray-mid-light transition-all transform hover:-translate-y-1 hover:shadow-lg hover:bg-white"
           >
-            <Icon icon={logoGithub} className="text-brand-dark mr-2 h-6 w-6" />
+            <Icon
+              icon={logoGithub}
+              className="text-brand-dark mr-2 h-6 w-6 flex-shrink-0"
+            />
             <span className="text-brand-dark">Source Code</span>
           </a>
           <a
@@ -72,7 +75,10 @@ const CaseStudies = ({ title, desc, image, source, demo }: CardProps) => {
             rel="noreferrer"
             className="btn bg-white inline-flex items-center justify-center mr-4 py-3 px-6 rounded-lg w-1/2 text-center bg-gradient-to-bl from-white to-gray-mid-light transition-all transform hover:-translate-y-1 hover:shadow-lg hover:bg-white"
           >
-            <Icon icon={contentView} className="text-brand-dark mr-2 h-6 w-6" />
+            <Icon
+              icon={contentView}
+              className="text-brand-dark mr-2 h-6 w-6 flex-shrink-0"
+            />
             <span className="text-brand-dark">Demo</span>
           </a>
         </motion.div>

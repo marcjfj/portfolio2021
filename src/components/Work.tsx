@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import CaseStudies from './CaseStudy';
+import CaseStudy from './CaseStudy';
 import { Icon } from '@iconify/react';
 import workData from '../workdata';
 import arrowRight from '@iconify-icons/carbon/arrow-right';
@@ -8,7 +8,7 @@ const { heroVariants } = mv;
 const listCS = (data: Array<any>) => {
   return data.map((d, i) => (
     <div className="work-item" key={i}>
-      <CaseStudies
+      <CaseStudy
         title={d.title}
         desc={d.description}
         source={d.source}
