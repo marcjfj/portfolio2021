@@ -8,6 +8,14 @@ const workData = [
     image: '/images/podchat.png',
   },
   {
+    title: 'Other-Hover.js',
+    description:
+      'A small JavaScript library that allows you to style elements by the hover state of another element. Published on npm, this package is tested with Jest and minified with esbuild ',
+    source: 'https://github.com/marcjfj/other-hover',
+    demo: 'https://marcjfj.github.io/other-hover-site/',
+    image: '/images/other-hover.png',
+  },
+  {
     title: 'Employee Directory',
     description:
       'Built with React, this employee directory parses JSON data, displays records, and allows for real-time searching, sorting, and filtering.',
