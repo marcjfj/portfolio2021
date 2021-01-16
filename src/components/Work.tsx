@@ -56,7 +56,7 @@ const Work = ({ scrollPos }: propTypes) => {
             <span className="text-24 text-white mr-2">
               See more of my work on GitHub
             </span>
-            <div className="arrow-wrapper transition-all transform-gpu group-hover:translate-x-2 ">
+            <div className="arrow-wrapper block transition-all transform-gpu group-hover:translate-x-2 ">
               <Icon
                 icon={arrowRight}
                 className="fill-current text-white h-10 w-10 inline-block"
