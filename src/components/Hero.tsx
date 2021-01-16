@@ -21,7 +21,7 @@ const Hero = ({ scrollPos }: propTypes) => {
         />
       ) : null}
       <div className="container relative">
-        <div className="flex flex-wrap items-stretch flex-col lg:flex-row min-h-screen">
+        <div className="flex flex-wrap items-stretch flex-col lg:flex-row min-h-screen xl:pl-12">
           <motion.div
             initial="hidden"
             animate={scrollPos === 'hero' ? 'visible' : 'hidden'}

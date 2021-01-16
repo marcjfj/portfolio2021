@@ -1,5 +1,13 @@
 const workData = [
   {
+    title: 'Prism Colors',
+    description:
+      'A React based theme builder for the Prism.js Library. This tool exports the users style configuration as a css file to create custom syntax highlighting for docs and blogs',
+    source: 'https://github.com/marcjfj/prism-builder',
+    demo: 'https://prism-colors.com/',
+    image: '/images/prism.png',
+  },
+  {
     title: 'Podchat',
     description:
       'A podcast player with chat functionality! This React/Node app pulls podcast listings from the iTunes Store API to find the RSS feed. It then retrives the feed, parses it, and provides an interface to play podcasts. Logged in users can also leave Reddit style messages on each track.',

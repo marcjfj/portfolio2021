@@ -20,7 +20,7 @@ function card() {
           rel="noreferrer"
           target="_blank"
         >
-          <div className="icon-wrapper mr-2 w-7 h-7 rounded bg-brand-dark flex items-center justify-center">
+          <div className="icon-wrapper">
             <Icon
               icon={logoLinkedIn}
               width="1.2rem"
